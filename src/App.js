@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
 import './App.css';
 
 function App() {
@@ -19,9 +20,14 @@ function App() {
         >
           Learn React
         </a>
-        <Button variant="contained" color="primary">
-          你好，世界
-        </Button>
+        <Box component="span" m={1}>
+          <Button />
+        </Box>
+        <Box color="text.primary" clone>
+          <Button variant="contained" color="primary">
+            你好，世界
+          </Button>
+        </Box>
       </header>  
     </div>
   );
